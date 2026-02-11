@@ -3,11 +3,15 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
-    font-family: "Roboto";
+
 }
 
-h1 {
+body {
     font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* HEADER */
@@ -165,5 +169,47 @@ h1 {
     opacity: 1;
 }
 
+.action {
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 28px;
+    border: 0;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 15px;
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.action:hover {
+    opacity: 1;
+}
 
 /* END PROJECTS */
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    background-color: #181818;
+    color: #ffffff;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    bottom: auto;
+}
+
+footer p {
+    margin-left: 20px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* END FOOTER */
