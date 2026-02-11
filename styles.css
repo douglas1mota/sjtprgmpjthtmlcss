@@ -3,6 +3,7 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: "Roboto";
 }
 
 h1 {
@@ -17,6 +18,9 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 8;
 }
 
 .nav-list {
@@ -38,6 +42,8 @@ h1 {
 }
 
 /* END HEADER */
+
+/* MAIN */
 
 .main {
     width: 100%;
@@ -97,8 +103,6 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
 }
 
 .about div {
@@ -106,14 +110,60 @@ h1 {
     padding-right: 40px;
 }
 
-.about img{
+.about img {
     max-width: 450px;
     border-radius: 8px;
 }
 
-.about div h2{
+.about div h2 {
     font-size: 32px;
     margin-bottom: 14px;
-    
 }
+
 /* END ABOUT */
+
+/* PROJECTS */
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+
+}
+
+.projects h2 {
+    font-size: 35px;
+    margin: 10px 0px;
+}
+
+.projects p {
+    font-size: 28px;
+    margin: 15px 0px;
+    font-style: italic;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+}
+
+.project-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.9s;
+
+}
+
+.project-grid img:hover {
+    opacity: 1;
+}
+
+
+/* END PROJECTS */
