@@ -14,7 +14,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* HEADER */
+/* #region HEADER */
 
 .nav {
     background-color: #181818;
@@ -45,7 +45,7 @@ html {
     color: #fff
 }
 
-/* END HEADER */
+/* #endregion */
 
 /* MAIN */
 
